@@ -1,0 +1,88 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #4a2c2a;
+  color: #ffd700;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header::before {
+  content: '★';
+  font-size: 40px;
+  color: #ffd700;
+  margin-right: 10px;
+}
+
+header::after {
+  content: '⚖️';
+  font-size: 40px;
+  color: #ffd700;
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: 3px solid #4a2c2a;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #4a2c2a;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ffd700;
+}
+
+button {
+  background-color: #8b4513;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #a0522d;
+  transform: scale(1.05);
+}
+
+h3 {
+  color: #4a2c2a;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
